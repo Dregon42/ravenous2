@@ -3,13 +3,14 @@ const clientId = 'bD0WrZfn9RvEbjc6YcKWTw'
 
 const getData = async () => {
     try {
-        const response = await fetch('https://api.yelp.com/v3');
+        const response = await fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`);
         if(response.ok) {
             const jsonResponse = await response.json();
             console.log(jsonResponse);
         }
-        throw new Error('Request failed!');
     } catch(error) {
         console.log(error);
     }
 }
+
+getData()

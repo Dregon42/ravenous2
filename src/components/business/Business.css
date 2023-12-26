@@ -33,7 +33,7 @@
 }
 
 .BusinessInformation p {
-  font-size: 0.88rem;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1rem;
   margin: 0;
@@ -45,20 +45,21 @@
   justify-content: space-between;
 }
 
-.BusinessReviews {
+.BusinessReview {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
 }
 
-.BusinessReviews h3 {
+.BusinessReview h3 {
   margin: 0;
   color: #cca353;
   font-weight: 600;
 }
 
-.BusinessReviews .rating {
+.BusinessReview .rating {
   font-size: 0.88rem;
   line-height: 1rem;
+  
 }

@@ -23,13 +23,13 @@ const SearchBar = ({ searchYelp }) => {
     setSortBy(sortByOption);
   };
 
-  const handleChangeToTerm = (e) => {
-    setSearchTerm(e.target.value);
+  const handleChangeToTerm = (event) => {
+    setSearchTerm(event.target.value);
 
   };
 
-  const handleChangeToLocation = (e) => {
-    setLocation(e.target.value);
+  const handleChangeToLocation = (event) => {
+    setLocation(event.target.value);
   };
 
   const handleSearch = (event) => {

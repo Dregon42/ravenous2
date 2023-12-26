@@ -1,7 +1,7 @@
 import React from "react";
 import "./BusinessList.css";
 
-import Business from "./Business";
+import Business from "../business/Business";
 
 const BusinessList = ({ businesses }) => {
   return (

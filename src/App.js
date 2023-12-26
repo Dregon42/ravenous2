@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import BusinessList from "./BusinessList";
+import BusinessList from "./components/businesslist/BusinessList";
 import SearchBar from "./SearchBar";
 
 const business = {
