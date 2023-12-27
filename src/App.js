@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import getData from "./utils/server";
 
 import BusinessList from "./components/businesslist/BusinessList";
 import SearchBar from "./SearchBar";
@@ -22,6 +23,7 @@ const businesses = [business, business, business, business, business, business];
 const App = () => {
   const searchYelp = (term, location, sortBy) => {
     console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+    getData(term,location,sortBy)
   };
 
   return (
