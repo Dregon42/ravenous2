@@ -15,9 +15,9 @@ const getData = async (term, location, sortBy) => {
         });
         if(response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse);
-            const yelpInfo = jsonResponse
-            return yelpInfo
+            const data = jsonResponse.businesses
+            console.log(data);
+            return data
         }
     } catch(error) {
         console.log(error);
