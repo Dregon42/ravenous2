@@ -3,7 +3,7 @@ import "./App.css";
 import getData from "./utils/server";
 
 import BusinessList from "./components/businesslist/BusinessList";
-import SearchBar from "./SearchBar";
+import SearchBar from "./components/searchbar/SearchBar";
 
 // const business = {
 //   imageSrc:
@@ -48,7 +48,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1>Ravenous</h1>
+      <h1>NomNom Navigator</h1>
       <SearchBar searchYelp={searchYelp} />
       <BusinessList businesses={businesses} />
     </div>

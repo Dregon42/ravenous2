@@ -14,6 +14,9 @@
   justify-content: center;
   overflow: hidden;
   background: black;
+  box-shadow: 4px 4px 8px black;
+  border-radius: 5%;
+  z-index: 1;
 }
 
 .imageContainer img {
@@ -33,16 +36,17 @@
 }
 
 .BusinessInformation p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: .88rem;
   margin: 0;
 }
 
 .BusinessAddress {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
 }
 
 .BusinessReview {
@@ -53,6 +57,7 @@
 }
 
 .BusinessReview h3 {
+  font-size: medium;
   margin: 0;
   color: #cca353;
   font-weight: 600;
@@ -60,6 +65,9 @@
 
 .BusinessReview .rating {
   font-size: 0.88rem;
-  line-height: 1rem;
+  /* line-height: 1rem; */
   
 }
+ .BusinessReview p {
+  font-size: large;
+ }
